@@ -10,16 +10,16 @@ public class Uc1_EmployeeAttendance {
 
             if(empAttendance == 1) {
 
-                int empWorking =(int)(Math.random()*10)%2;   //emoWorking =1 (Full Time), else part-time
-                if(empWorking == 1) {
-                    workHrs = 8;
+                int empWorking = (int) (Math.random() * 10) % 2;   //emoWorking =1 (Full Time), else part-time
+                if (empWorking == 1) {
+                    System.out.println("Employee is present Full Time Today an will work for " + workHrs + " hours");
+                    System.out.println("Today's wage is " + dayWage + " Rupees");
+                } else {
+                    workHrs = 4;
+                    System.out.println("Employee is present Full Time Today an will work for " + workHrs + " hours");
+                    System.out.println("Today's wage is " + dayWage/2 + " Rupees");
                 }
-                else{
-                        workHrs = 4;
 
-                }
-                System.out.println("Employee is present Full Time Today an will work for " + workHrs + " hours");
-                System.out.println("Today's wage is " + dayWage + " Rupees");
             }
             else {
                 System.out.println("Employee is absent today, and total wage is zero");
