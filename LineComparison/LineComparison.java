@@ -16,7 +16,11 @@ public class LineComparison {
         int x2 = sc.nextInt();
         System.out.println("Enter y coordinate of second point");
         int y2 = sc.nextInt();
-        double dist = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+        double dist = LineComparison.calDis(x1,y1,x2,y2);
         System.out.println("distance between these points is " + dist);
+    }
+    static double calDis(int x1,int y1,int x2,int y2)
+    {
+        return (Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1)));
     }
 }
